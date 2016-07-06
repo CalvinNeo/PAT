@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E160E871-1CAC-4D8E-A79F-E89439237D6E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>HHU8</RootNamespace>
+    <RootNamespace>2016summer</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
     <ProjectName>2016summer</ProjectName>
   </PropertyGroup>
@@ -153,6 +153,7 @@
     <ClCompile Include="pat1004.cpp" />
     <ClCompile Include="pat1005.cpp" />
     <ClCompile Include="pat1006.cpp" />
+    <ClCompile Include="pat1007.cpp" />
     <ClCompile Include="zna.cpp" />
   </ItemGroup>
   <ItemGroup>

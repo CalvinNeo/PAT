@@ -36,6 +36,9 @@
     <ClCompile Include="pat1006.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="pat1007.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fuch.h">
