@@ -147,6 +147,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cccc.2.13.cpp" />
+    <ClCompile Include="hhu1.1001.cpp" />
     <ClCompile Include="pat1001.cpp" />
     <ClCompile Include="pat1002.cpp" />
     <ClCompile Include="pat1003.cpp" />
@@ -154,6 +156,9 @@
     <ClCompile Include="pat1005.cpp" />
     <ClCompile Include="pat1006.cpp" />
     <ClCompile Include="pat1007.cpp" />
+    <ClCompile Include="pat1008.cpp" />
+    <ClCompile Include="pat1009.cpp" />
+    <ClCompile Include="top1001.cpp" />
     <ClCompile Include="zna.cpp" />
   </ItemGroup>
   <ItemGroup>
