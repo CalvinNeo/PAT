@@ -36,3 +36,4 @@ Release/
 */Release/
 .vs/
 *.opendb
+*.db

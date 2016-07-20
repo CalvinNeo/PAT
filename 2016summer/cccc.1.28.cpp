@@ -14,22 +14,25 @@
 //#include <numeric>
 //
 //#define INF 0x3f3f3f3f
-//#define MAXN 505
+//#define MAXN 30000005
 //using namespace std;
 //#define LL long long
 //
-//LL exgcd(LL a, LL b, LL & x, LL & y ) {
-//	LL d;
-//	if (b == 0) {
-//		x = 1; y = 0;
-//		return a;
+//inline bool isPrime(LL n) {
+//	// important 漏掉会wa一个点
+//	if (n == 1) { return false; }
+//	if (n == 2) { return true; }
+//	bool isp = true;
+//	for (LL i = 2; i < sqrt(n) + 1; i++)
+//	{
+//		if (n % i == 0) {
+//			isp = false;
+//			break;
+//		}
 //	}
-//	else {
-//		int ans = exgcd(b, a % b, y, x);
-//		y -= x * (a / b);
-//		return ans;
-//	}
+//	return isp;
 //}
+//
 //
 //int main() {
 //#ifdef __ACM
@@ -37,18 +40,10 @@
 //#endif
 //	int T;
 //	cin >> T;
-//	LL n, B;
 //	while (T--) {
-//		cin >> n >> B;
-//		/*
-//		 解方程 ax === b(mod n)相当于解方程 ax + ny == b
-//		 根据裴蜀定理, 以上方程当 gcd(a, n) | b
-//		*/
-//		LL x, y;
-//		exgcd(B, 9973, x, y);
-//		x *= n;
-//		x = (x % 9973 + 9973) % 9973;
-//		cout << x << endl;
+//		LL x;
+//		cin >> x;
+//		cout << (isPrime(x) ? "Yes" : "No") << endl;
 //	}
 //#ifdef __ACM
 //	system("pause");
