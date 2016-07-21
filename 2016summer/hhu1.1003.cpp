@@ -41,8 +41,9 @@ int main() {
 	LL x, y, m, n, L;
 	while (cin >> x) {
 		cin >> y >> m >> n >> L;
-		LL k, Y, d;
-		d = exgcd((m - n), L, k, Y);
+		LL k, p, d;
+
+		d = exgcd((m - n), L, k, p);
 		// solve equalation (m - n)k + Ly == d if d | (y - x) where d = gcd((m - n), L)
 		// print Impossible if d ~| (y - x)
 		if ((y - x) % d != 0) {
@@ -50,12 +51,12 @@ int main() {
 		}
 		else {
 			LL mul = (y - x) / d;
-			x *= mul;
-			while (x < 0) {
-				x += L;
-			}
-			x = ((x + L) % L);
-			cout << x << endl;
+			LL div = L / d;
+			// Important Not BELOW
+			//k *= L;
+			k = mul * k;
+			k = (k % L + L) % L;
+			cout << k << endl;
 		}
 	}
 #ifdef __ACM
