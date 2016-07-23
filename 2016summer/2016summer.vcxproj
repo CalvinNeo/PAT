@@ -152,6 +152,12 @@
     <ClCompile Include="hhu1.1001.cpp" />
     <ClCompile Include="hhu1.1002.cpp" />
     <ClCompile Include="hhu1.1003.cpp" />
+    <ClCompile Include="hhu1.1004.cpp" />
+    <ClCompile Include="multi2.1003.cpp" />
+    <ClCompile Include="multi2.1009.cpp" />
+    <ClCompile Include="multi2.1011.cpp" />
+    <ClCompile Include="multi2.1012.cpp" />
+    <ClCompile Include="multi2.1001.cpp" />
     <ClCompile Include="pat1001.cpp" />
     <ClCompile Include="pat1002.cpp" />
     <ClCompile Include="pat1003.cpp" />
