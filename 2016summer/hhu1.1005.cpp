@@ -37,7 +37,7 @@
 //			min1 = min2;
 //			return x;
 //		}
-//		else{
+//		else {
 //			// impossible
 //			//cout << a[6747222] << endl;
 //		}
@@ -61,7 +61,7 @@
 //			len++;
 //			len = min(len, 2);
 //		}
-//		else if (x < min2) { 
+//		else if (x < min2) {
 //			min2 = x;
 //			len++;
 //			len = min(len, 2);
@@ -82,7 +82,7 @@
 //inline LL iscomp(LL n, LL st = 2) {
 //	if (n == 1) { return -1; }
 //	if (n == 2) { return 0; }
-//	for (LL i = st; i * i <= n && i  <= searchto; i++)
+//	for (LL i = st; i * i <= n && i <= searchto; i++)
 //	{
 //		if (n % i == 0) {
 //			return i;
@@ -99,68 +99,9 @@
 //	int T;
 //	scanf("%d", &T);
 //	while (T--) {
-//		int n;
-//		scanf("%d", &n);
-//		Q.clear();
-//		for (int i = 1; i <= n; i++)
-//		{
-//			LL x;
-//			scanf("%I64d", &x);
+//		LL G, L;
+//		scanf("%lld %lld", &G, &L);
 //
-//			searchto = INF;
-//			LL r = iscomp(x);
-//			if (r == 0) {
-//				// 质数直接进去
-//				Q.push(x);
-//			}
-//			else if (r == -1) {
-//				// n == 1
-//			}
-//			else {
-//				// 合数
-//				/*
-//				In: 3 1 1 4
-//				Out 4
-//				*/
-//				bool flag = false;
-//				LL y = 0;
-//				for (LL j = 2; j * j  <= x/r ; j++) {
-//					if ((x / r) % j == 0) {
-//						flag = true;
-//						y = j;
-//						break;
-//					}
-//				}
-//				if (flag) {
-//					//两个因子
-//					Q.push(r);
-//					Q.push(y);
-//				}
-//				else {
-//					//只有一个因子
-//					Q.push(r);
-//					if (x / r != 1) {
-//						Q.push(x / r);
-//					}
-//				}
-//			}
-//		}
-//
-//		LL ans = 1;
-//
-//		if (Q.empty()) {
-//			printf("-1\n");
-//		}
-//		else {
-//			ans *= Q.pop();
-//			if (!Q.empty() && ans != 1) {
-//				ans *= Q.pop();
-//				printf("%I64d\n", ans);
-//			}
-//			else {
-//				printf("-1\n");
-//			}
-//		}
 //	}
 //#ifdef __ACM
 //	system("pause");
