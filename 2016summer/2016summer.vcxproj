@@ -159,7 +159,11 @@
     <ClCompile Include="hhu2.1003.cpp" />
     <ClCompile Include="hhu2.1005.cpp" />
     <ClCompile Include="hhu3.1001.cpp" />
+    <ClCompile Include="hhu3.1002.cpp" />
     <ClCompile Include="hhu3.1003.cpp" />
+    <ClCompile Include="hhu3.1004.cpp" />
+    <ClCompile Include="hhu3.1005.cpp" />
+    <ClCompile Include="hhu4.1001.cpp" />
     <ClCompile Include="multi2.1003.cpp" />
     <ClCompile Include="multi2.1009.cpp" />
     <ClCompile Include="multi2.1011.cpp" />
@@ -174,6 +178,9 @@
     <ClCompile Include="multi5.1003.cpp" />
     <ClCompile Include="multi5.1012.cpp" />
     <ClCompile Include="multi5.1012.m.cpp" />
+    <ClCompile Include="multi6.1001.cpp" />
+    <ClCompile Include="multi6.1003.cpp" />
+    <ClCompile Include="multi6.1010.cpp" />
     <ClCompile Include="pat1001.cpp" />
     <ClCompile Include="pat1002.cpp" />
     <ClCompile Include="pat1003.cpp" />
