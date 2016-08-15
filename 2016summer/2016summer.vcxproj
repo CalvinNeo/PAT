@@ -149,6 +149,9 @@
   <ItemGroup>
     <ClCompile Include="cccc.1.28.cpp" />
     <ClCompile Include="cccc.2.13.cpp" />
+    <ClCompile Include="ccpc2016.1004.cpp" />
+    <ClCompile Include="ccpc2016.1011.cpp" />
+    <ClCompile Include="ccpc2016.1002.cpp" />
     <ClCompile Include="hhu1.1001.cpp" />
     <ClCompile Include="hhu1.1002.cpp" />
     <ClCompile Include="hhu1.1003.cpp" />
@@ -164,6 +167,8 @@
     <ClCompile Include="hhu3.1004.cpp" />
     <ClCompile Include="hhu3.1005.cpp" />
     <ClCompile Include="hhu4.1001.cpp" />
+    <ClCompile Include="hhu4.1002.cpp" />
+    <ClCompile Include="hhu4.1003.cpp" />
     <ClCompile Include="multi2.1003.cpp" />
     <ClCompile Include="multi2.1009.cpp" />
     <ClCompile Include="multi2.1011.cpp" />

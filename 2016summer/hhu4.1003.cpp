@@ -28,51 +28,37 @@
 //
 //
 //#define INF 0x3f3f3f3f
-//#define MAXN 100010
+//#define MAXN 10010
 //using namespace std;
 //#define LL long long
 //
 //#define SC1(X) scanf("%d", &X)
 //#define SC2(X, Y) scanf("%d %d", &X, &Y)
 //
-//int dp[MAXN][13];
-//
-////template <typename T, typename... Args>
-////int maxn(T value, Args... args) {
-////	return max(value, maxn(args...));
-////}
-////template <typename T>
-////int maxn(T value) {
-////	return value;
-////}
+//int ans[MAXN];
+//int cost[] = { 150, 200, 350 };
 //
 //int main() {
 //#ifdef __ACM
 //	//ifstream fin("1.txt");	streambuf *cinbackup;  	cinbackup = cin.rdbuf(fin.rdbuf());
 //	//freopen("1.txt", "r", stdin);
 //#endif
+//	int T;
+//	SC1(T);
 //	int n;
-//	while (~SC1(n) && n != 0) {
-//		int x, T, maxt = -INF;
-//		memset(dp, 0, sizeof(dp));
-//		for (int i = 0; i < n; i++)
+//	memset(ans, 0, sizeof(ans));
+//	while (T--) {
+//		SC1(n);
+//
+//		for (int i = 0; i < 3; i++)
 //		{
-//			SC2(x, T);
-//			dp[T][x]++;
-//			maxt = max(T, maxt);
-//		}
-//		for (int t = maxt ; t > 0; t--)
-//		{
-//			dp[t - 1][0] += max(dp[t ][1], dp[t ][0]);
-//			for (int i = 1; i <= 9; i++)
+//			for (int v = 0; v <= n; v++)
 //			{
-//				dp[t - 1][i] += max(dp[t ][i - 1], max( dp[t][i], dp[t ][i + 1]));
+//				ans[v] = min(ans[v], ans[v - cost[i]] + cost[i]);
 //			}
-//			dp[t - 1][10] += max(dp[t ][10], dp[t ][9]);
 //		}
-//		int ans;
-//		ans = dp[0][5];
-//		printf("%d\n", ans);
+//
+//		printf("%d\n", n - ans[n]);
 //	}
 //#ifdef __ACM
 //	int iwannastop;
