@@ -46,15 +46,14 @@
 //	int T;
 //	SC1(T);
 //	int n;
-//	memset(ans, 0, sizeof(ans));
 //	while (T--) {
 //		SC1(n);
-//
+//		memset(ans, 0, sizeof(ans));
 //		for (int i = 0; i < 3; i++)
 //		{
-//			for (int v = 0; v <= n; v++)
+//			for (int v = cost[i]; v <= n; v++)
 //			{
-//				ans[v] = min(ans[v], ans[v - cost[i]] + cost[i]);
+//				ans[v] = max(ans[v], ans[v - cost[i]] + cost[i]);
 //			}
 //		}
 //
