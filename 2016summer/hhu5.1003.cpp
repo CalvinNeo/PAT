@@ -16,7 +16,7 @@
 //#include <numeric>
 //
 //inline int fastread() {
-//	
+//
 //	char c;
 //	int ret = 0;
 //	int sgn = 1;
@@ -28,53 +28,58 @@
 //
 //
 //#define INF 0x3f3f3f3f
-//#define MAXN 510
+//#define MAXN 2010
 //using namespace std;
 //#define LL long long
 //
 //#define SC1(X) scanf("%d", &X)
 //#define SC2(X, Y) scanf("%d %d", &X, &Y)
 //
-//int a[MAXN];
-//int b[MAXN];
-//int dp[MAXN][MAXN];
+//bool vis[MAXN];
+//int con[MAXN];
+//int e[MAXN][MAXN];
+//int K, M, N;
+//
+//bool match(int s) {
+//	for (int i = 1; i <= M; i++)
+//	{
+//		if (!vis[i] && e[i][s]) {
+//			vis[i] = true;
+//			if (con[i] == 0 || match(con[i])) {
+//				con[i] = s;
+//				return true;
+//			}
+//		}
+//	}
+//	return false;
+//}
 //
 //int main() {
 //#ifdef __ACM
 //	//ifstream fin("1.txt");	streambuf *cinbackup;  	cinbackup = cin.rdbuf(fin.rdbuf());
 //	//freopen("1.txt", "r", stdin);
 //#endif
-//	int T;
-//	SC1(T);
-//	while (T--) {
-//		int Ma, Mb;
-//		SC1(Ma);
-//		for (int i = 1; i <= Ma; i++)
+//	while (scanf("%d", &K) != EOF) {
+//		if (K == 0)return 0;
+//		SC2(M, N);
+//		int a, b;
+//		memset(e, 0, sizeof e);
+//		for (int i = 0; i < K; i++)
 //		{
-//			SC1(a[i]);
+//			SC2(a, b);
+//			e[a][b] = true;
+//			// no e[a][b] = true;
 //		}
-//		SC1(Mb);
-//		for (int i = 1; i <= Mb; i++)
+//		int m = 0;
+//		memset(con,0, sizeof con);
+//		for (int i = 1; i <= N; i++)
 //		{
-//			SC1(b[i]);
-//		}
-//		for (int i = 1; i <= Ma; i++)
-//		{
-//			for (int j = 1; j <= Mb; j++)
-//			{
-//				if (a[i] == b[j]) {
-//					// 注意此处不要再去枚举ii了, 因为最长的LCIS的i一定是i-1(子问题)
-//					for (int jj = 0; jj < j - 1; jj++)
-//					{
-//
-//					}
-//				}
-//				else {
-//					dp[i][j] = dp[i - 1][j];
-//				}
+//			memset(vis, 0, sizeof vis);
+//			if (match(i)) {
+//				m++;
 //			}
 //		}
-//		printf("%d\n", dp[Ma][Mb]);
+//		printf("%d\n", m);
 //	}
 //#ifdef __ACM
 //	int iwannastop;
@@ -82,5 +87,5 @@
 //	system("pause");
 //#endif
 //}
-
-
+//
+//

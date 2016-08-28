@@ -28,53 +28,78 @@
 //
 //
 //#define INF 0x3f3f3f3f
-//#define MAXN 510
+//#define MAXN 110
 //using namespace std;
 //#define LL long long
 //
 //#define SC1(X) scanf("%d", &X)
 //#define SC2(X, Y) scanf("%d %d", &X, &Y)
 //
-//int a[MAXN];
-//int b[MAXN];
-//int dp[MAXN][MAXN];
+//int e[MAXN][MAXN];
+//int dis[MAXN];
+//bool vis[MAXN];
+//int n, m;
 //
 //int main() {
 //#ifdef __ACM
 //	//ifstream fin("1.txt");	streambuf *cinbackup;  	cinbackup = cin.rdbuf(fin.rdbuf());
 //	//freopen("1.txt", "r", stdin);
 //#endif
-//	int T;
-//	SC1(T);
-//	while (T--) {
-//		int Ma, Mb;
-//		SC1(Ma);
-//		for (int i = 1; i <= Ma; i++)
-//		{
-//			SC1(a[i]);
+//	while (SC2(n, m) != EOF) {
+//		int cost = 0;
+//		int count = 0;
+//		if (n == 0) {
+//			return 0;
 //		}
-//		SC1(Mb);
-//		for (int i = 1; i <= Mb; i++)
+//		for (int i = 0; i <= m; i++)
 //		{
-//			SC1(b[i]);
-//		}
-//		for (int i = 1; i <= Ma; i++)
-//		{
-//			for (int j = 1; j <= Mb; j++)
+//			for (int j = 0; j <= m; j++)
 //			{
-//				if (a[i] == b[j]) {
-//					// 注意此处不要再去枚举ii了, 因为最长的LCIS的i一定是i-1(子问题)
-//					for (int jj = 0; jj < j - 1; jj++)
-//					{
-//
-//					}
-//				}
-//				else {
-//					dp[i][j] = dp[i - 1][j];
+//				e[i][j] = INF;
+//			}
+//		}
+//		for (int i = 0; i < n; i++)
+//		{
+//			int a, b, c;
+//			scanf("%d %d %d", &a, &b, &c);
+//			e[a][b] = c;
+//			e[b][a] = c;
+//		}
+//		memset(vis, 0, sizeof vis);
+//		fill(dis, dis + m + 1, INF);
+//		dis[1] = 0;
+//		int add;
+//		for (int a = 1; a <= m; a++) {
+//			int mindis = INF, minindex = -1;
+//			for (int b = 1; b <= m; b++)
+//			{
+//				if (!vis[b] && dis[b] < mindis) {
+//					mindis = dis[b];
+//					minindex = b;
+//				}				
+//			}
+//			if (minindex != -1)
+//			{
+//				vis[minindex] = true;
+//				cost += dis[minindex];
+//				count++;
+//			}
+//			else {
+//				break;
+//			}
+//			for (int i = 1; i <= m; i++)
+//			{
+//				if (!vis[i]) {
+//					dis[i] = min(dis[i], /*dis[minindex] +*/ e[minindex][i]);
 //				}
 //			}
 //		}
-//		printf("%d\n", dp[Ma][Mb]);
+//		if (count < m) {
+//			printf("?\n");
+//		}
+//		else {
+//			printf("%d\n", cost);
+//		}
 //	}
 //#ifdef __ACM
 //	int iwannastop;
@@ -82,5 +107,5 @@
 //	system("pause");
 //#endif
 //}
-
-
+//
+//
