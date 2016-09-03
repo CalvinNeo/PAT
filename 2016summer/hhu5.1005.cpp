@@ -29,7 +29,7 @@ bool vis[MAXN];
 int pre[MAXN];
 int maxf = 0;
 
-// 这个bfs会超时
+
 bool bfs() {
 	memset(pre, 0, sizeof pre);
 	memset(vis, 0, sizeof vis);
