@@ -16,43 +16,60 @@
 //#include <numeric>
 //
 //#define INF 0x3f3f3f3f
-//#define MAXN 256
+//#define MAXN 100060
 //using namespace std;
 //#define LL long long
 //
 //#define SC1(X) scanf("%d", &X)
 //#define SC2(X, Y) scanf("%d %d", &X, &Y)
 //
+//int T, cas = 0;
 //
+//inline int check(LL x, LL n) {
+//	LL current = (1 + x) * x / 2;
+//	LL next = (1 + x) * (2 + x) / 2;
+//	if(x )
+//	if (current <= n && next > n)
+//	{
+//		return 0;
+//	}
+//	else if(next <= n){
+//		// x is too small
+//		return 1;
+//	}
+//	else if (current > n) {
+//		// x is too big
+//		return -1;
+//	}
+//}
 //int main() {
 //#ifdef __ACM
 //	//ifstream fin("1.txt");	streambuf *cinbackup;  	cinbackup = cin.rdbuf(fin.rdbuf());
 //	//freopen("1.txt", "r", stdin);
 //#endif
-//	//while (true)
-//	//{
-//		string s;
-//		cin >> s;
-//		bool exist[256];
-//		int max_len = 1;
-//		int cur_len = 1;
-//		if (s == "") return 0;
-//		memset(exist, 0, sizeof exist);
-//		for (int i = 0; i < s.size(); i++)
-//		{
-//			if (!exist[s[i]]) {
-//				exist[s[i]] = true;
-//				cur_len++;
+//	SC1(T);
+//	while (T--) {
+//		cas++;
+//		LL n;
+//		scanf("%lld", &n);
+//		LL l = 1, r = (LL)(sqrtl((n +1) * 2) + 1);
+//		while (l < r) {
+//			LL mid = (l + r) / 2;
+//			int k = check(mid, n);
+//			if (k == 0) {
+//				l = mid;
+//				break;
 //			}
-//			else {
-//				if (cur_len > max_len) {
-//					max_len = cur_len;
-//				}
-//				memset(exist, 0, sizeof exist);
+//			else if (k == 1) {
+//				l = mid + 1;
+//			}
+//			else if (k == -1) {
+//				r = mid;
 //			}
 //		}
-//		printf("%d\n", max_len);
-//	//}
+//		l = l * (l + 1) / 2;
+//		printf("Case #%d: %lld\n", cas, l);
+//	}
 //#ifdef __ACM
 //	int iwannastop;
 //	scanf("%d", &iwannastop);

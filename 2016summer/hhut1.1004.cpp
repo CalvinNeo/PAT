@@ -26,12 +26,20 @@
 //int T, cas = 0;
 //LL s[MAXN];
 //
+//void dotest() {
+//
+//}
+//
 //int main() {
 //#ifdef __ACM
 //	//ifstream fin("1.txt");	streambuf *cinbackup;  	cinbackup = cin.rdbuf(fin.rdbuf());
 //	//freopen("1.txt", "r", stdin);
 //#endif
-//	SC1()
+//	SC1(T);
+//	while (T--) {
+//		cas++;
+//		int ex, ey;
+//	}
 //#ifdef __ACM
 //	int iwannastop;
 //	scanf("%d", &iwannastop);

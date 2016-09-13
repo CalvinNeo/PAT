@@ -177,9 +177,16 @@
     <ClCompile Include="hhu5.1004.cpp" />
     <ClCompile Include="hhu5.1005.cpp" />
     <ClCompile Include="hhut1.1002.cpp" />
+    <ClCompile Include="hhut1.1003.cpp" />
     <ClCompile Include="hhut1.1004.cpp" />
     <ClCompile Include="hhut1.1001.cpp" />
+    <ClCompile Include="hhut1.1005.cpp" />
+    <ClCompile Include="icpc1.1006.cpp" />
+    <ClCompile Include="icpc1.1007.cpp" />
+    <ClCompile Include="icpc1.1009.cpp" />
+    <ClCompile Include="icpc1.1010.cpp" />
     <ClCompile Include="leet.3.cpp" />
+    <ClCompile Include="llb1.1001.cpp" />
     <ClCompile Include="multi10.1001.cpp" />
     <ClCompile Include="multi10.1002.cpp" />
     <ClCompile Include="multi2.1003.cpp" />

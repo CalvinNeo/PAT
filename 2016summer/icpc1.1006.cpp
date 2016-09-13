@@ -16,7 +16,7 @@
 //#include <numeric>
 //
 //#define INF 0x3f3f3f3f
-//#define MAXN 256
+//#define MAXN 100005
 //using namespace std;
 //#define LL long long
 //
@@ -24,38 +24,56 @@
 //#define SC2(X, Y) scanf("%d %d", &X, &Y)
 //
 //
+//int a[MAXN ];
+//int b[MAXN ];
+//
+//int T, cas = 0;
+//
 //int main() {
 //#ifdef __ACM
 //	//ifstream fin("1.txt");	streambuf *cinbackup;  	cinbackup = cin.rdbuf(fin.rdbuf());
 //	//freopen("1.txt", "r", stdin);
 //#endif
-//	//while (true)
-//	//{
-//		string s;
-//		cin >> s;
-//		bool exist[256];
-//		int max_len = 1;
-//		int cur_len = 1;
-//		if (s == "") return 0;
-//		memset(exist, 0, sizeof exist);
-//		for (int i = 0; i < s.size(); i++)
+//	while (~scanf("%d", &T))
+//	{
+//		while (T--)
 //		{
-//			if (!exist[s[i]]) {
-//				exist[s[i]] = true;
-//				cur_len++;
-//			}
-//			else {
-//				if (cur_len > max_len) {
-//					max_len = cur_len;
+//			int n;
+//			SC1(n);
+//			LL cnt = 0;
+//			bool flag = true;
+//			for (int i = 0; i<n; i++)
+//			{
+//				SC1(a[i]);
+//				if (a[i] > 2 * (n - 1)) {
+//					flag = false;
 //				}
-//				memset(exist, 0, sizeof exist);
+//				if (a[i] == 0) {
+//					cnt++;
+//				}
 //			}
+//			for (int i = 0; i < n; i++)
+//			{
+//				b[i] = n - 1;
+//			}
+//			LL ans = 0;
+//			for (int i = 0; i < n; i++)
+//			{
+//				ans += b[i];
+//				ans -= a[i];
+//			}
+//			if (ans == 0 && flag && cnt <= 1)
+//				puts("T");
+//			else 
+//				puts("F");
 //		}
-//		printf("%d\n", max_len);
-//	//}
+//	}
+//	return 0;
 //#ifdef __ACM
 //	int iwannastop;
 //	scanf("%d", &iwannastop);
 //	system("pause");
 //#endif
 //}
+//
+//
