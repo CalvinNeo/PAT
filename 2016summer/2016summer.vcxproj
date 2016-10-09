@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bnu1.1005.cpp" />
     <ClCompile Include="cccc.1.28.cpp" />
     <ClCompile Include="cccc.2.13.cpp" />
     <ClCompile Include="ccpc2016.1004.cpp" />
@@ -154,6 +155,10 @@
     <ClCompile Include="ccpc2016.1011.cpp" />
     <ClCompile Include="ccpc2016.1002.cpp" />
     <ClCompile Include="gq1.1002.cpp" />
+    <ClCompile Include="gq3.1006.cpp" />
+    <ClCompile Include="gq4.1004.cpp" />
+    <ClCompile Include="gq4.1010.cpp" />
+    <ClCompile Include="gq6.1004.cpp" />
     <ClCompile Include="hhu5.1001.cpp" />
     <ClCompile Include="hhu1.1001.cpp" />
     <ClCompile Include="hhu1.1002.cpp" />
@@ -187,6 +192,7 @@
     <ClCompile Include="icpc1.1009.cpp" />
     <ClCompile Include="icpc1.1010.cpp" />
     <ClCompile Include="icpc2.1001.cpp" />
+    <ClCompile Include="icpc2.1011.m.cpp" />
     <ClCompile Include="icpc2.1002.cpp" />
     <ClCompile Include="icpc2.1006.cpp" />
     <ClCompile Include="icpc2.1007.cpp" />
@@ -233,6 +239,7 @@
     <ClCompile Include="pat1008.cpp" />
     <ClCompile Include="pat1009.cpp" />
     <ClCompile Include="test_pq.cpp" />
+    <ClCompile Include="time.cpp" />
     <ClCompile Include="top1001.cpp" />
     <ClCompile Include="zna.cpp" />
   </ItemGroup>

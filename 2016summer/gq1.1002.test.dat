@@ -98,3 +98,12 @@ int a;
 a = 9;
 a = a * .55555555;
 print(a);
+
+24
+print(a);
+b = b + 1;
+print(b)
+c = c + b
+print(c);
+d = d * 1.0;
+print(d)
