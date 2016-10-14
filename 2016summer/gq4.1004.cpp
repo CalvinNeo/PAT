@@ -301,11 +301,11 @@
 //		printf("%d\n", delid);
 //	}
 //
-//	return delc;
+//	return delc; 
 //}
 //
 //void test() {
-//	for (int i = 13; i <= 13; i++)
+//	for (int i = 7; i <= 7; i++)
 //	{
 //		//printf("%d,%d\n", i, find(i));
 //		printf("%d,", find(i));
