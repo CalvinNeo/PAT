@@ -154,6 +154,7 @@
     <ClCompile Include="ccpc2016.1007.cpp" />
     <ClCompile Include="ccpc2016.1011.cpp" />
     <ClCompile Include="ccpc2016.1002.cpp" />
+    <ClCompile Include="ccpc2016hefei.i.cpp" />
     <ClCompile Include="gq1.1002.cpp" />
     <ClCompile Include="gq3.1006.cpp" />
     <ClCompile Include="gq4.1004.cpp" />
@@ -202,6 +203,11 @@
     <ClCompile Include="icpc2.1007.cpp" />
     <ClCompile Include="icpc2.1011.cpp" />
     <ClCompile Include="icpc2.1011.m2.cpp" />
+    <ClCompile Include="icpc2.1011.m3.cpp" />
+    <ClCompile Include="icpc2015hangzhou.1001.cpp" />
+    <ClCompile Include="icpc2015hangzhou.1003.cpp" />
+    <ClCompile Include="icpc2015hangzhou.1009.cpp" />
+    <ClCompile Include="icpc2015hangzhou.1010.cpp" />
     <ClCompile Include="icpc3.1002.cpp" />
     <ClCompile Include="icpc3.1003.cpp" />
     <ClCompile Include="icpc3.1007.cpp" />
