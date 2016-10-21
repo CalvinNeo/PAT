@@ -107,3 +107,13 @@ c = c + b
 print(c);
 d = d * 1.0;
 print(d)
+
+24
+double a, b
+int c, d
+c = 5
+d = c
+a = 5
+b = a
+print(b)
+print(d)

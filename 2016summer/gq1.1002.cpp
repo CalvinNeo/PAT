@@ -292,8 +292,8 @@
 //				frame.push_back(Var(it.var.val, 'i'));
 //			}
 //		}
-//		else if (it.type == 'o') {
-//			if (it.op == 'p') {
+//		else if (it.type == 'o') { // operator
+//			if (it.op == 'p') { // print
 //				for (int j = 0; j < frame.size(); j++)
 //				{
 //					Var jt = frame[j]; 
@@ -308,14 +308,14 @@
 //					}
 //				}
 //			}
-//			else if (it.op == 'd') {
+//			else if (it.op == 'd') { // define double
 //				for (int j = i + 1; j < toks.size(); j++)
 //				{
 //					Var jt = toks[j].var;
 //					slots[jt.val] = Var("0.0", 'd');
 //				}
 //			}
-//			else if (it.op == 'i') {
+//			else if (it.op == 'i') { // define integer
 //				for (int j = i + 1; j < toks.size(); j++)
 //				{
 //					Var jt = toks[j].var;
@@ -335,9 +335,11 @@
 //				frame.pop_back();
 //				if (op1.type == 'v') {
 //					op1 = slots[op1.val];
+//					if (op1.val == "") { op1.val = "0"; op1.type = 'i'; };
 //				}
 //				if (op2.type == 'v') {
 //					op2 = slots[op2.val];
+//					if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
 //				}
 //				if (op1.type == 'i' && op2.type == 'i') {
 //					LL ans = parse_int(op1.val) + parse_int(op2.val);
@@ -369,9 +371,11 @@
 //				frame.pop_back();
 //				if (op1.type == 'v') {
 //					op1 = slots[op1.val];
+//					if (op1.val == "") { op1.val = "0"; op1.type = 'i'; };
 //				}
 //				if (op2.type == 'v') {
 //					op2 = slots[op2.val];
+//					if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
 //				}
 //				if (op1.type == 'i' && op2.type == 'i') {
 //					LL ans = parse_int(op1.val) - parse_int(op2.val);
@@ -401,6 +405,7 @@
 //				frame.pop_back();
 //				if (op1.type == 'v') {
 //					op1 = slots[op1.val];
+//					if (op1.val == "") { op1.val = "0"; op1.type = 'i'; };
 //				}
 //				if (op1.type == 'i' ) {
 //					LL ans  = -parse_int(op1.val);
@@ -418,6 +423,7 @@
 //				frame.pop_back();
 //				if (op1.type == 'v') {
 //					op1 = slots[op1.val];
+//					if (op1.val == "") { op1.val = "0"; op1.type = 'i'; };
 //				}
 //				frame.push_back(op1);
 //			}
@@ -428,9 +434,11 @@
 //				frame.pop_back();
 //				if (op1.type == 'v') {
 //					op1 = slots[op1.val];
+//					if (op1.val == "") { op1.val = "0"; op1.type = 'i'; };
 //				}
 //				if (op2.type == 'v') {
 //					op2 = slots[op2.val];
+//					if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
 //				}
 //				if (op1.type == 'i' && op2.type == 'i') {
 //					LL ans = parse_int(op1.val) * parse_int(op2.val);
@@ -463,9 +471,11 @@
 //				frame.pop_back();
 //				if (op1.type == 'v') {
 //					op1 = slots[op1.val];
+//					if (op1.val == "") { op1.val = "0"; op1.type = 'i'; };
 //				}
 //				if (op2.type == 'v') {
 //					op2 = slots[op2.val];
+//					if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
 //				}
 //				if (op1.type == 'i' && op2.type == 'i') {
 //					if (parse_int(op2.val) == 0) {
@@ -512,24 +522,46 @@
 //				frame.pop_back();
 //				Var uop1 = slots[op1.val];
 //				if (uop1.type == 'i') {
+//					if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
 //					if (op2.type == 'i') {
 //						slots[op1.val] = Var( op2.val, 'i');
 //					}
-//					else{
-//						slots[op1.val] = Var(str_int((LL)parse_double(op2.val)), 'i');
+//					else if(op2.type == 'd'){
+//						slots[op1.val] = Var( str_int((LL)parse_double(op2.val)), 'i');
+//					}
+//					else {
+//						op2 = slots[op2.val];
+//						if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
+//						slots[op1.val] = op2;
 //					}
 //				}
 //				else if(uop1.type == 'd'){
+//					if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
 //					if (op2.type == 'i') {
 //						LL ansint = (LL)parse_double(op2.val);
 //						slots[op1.val] = Var(str_double(ansint), 'd');
 //					}
-//					else {
+//					else if (op2.type == 'd') {
 //						slots[op1.val] = Var(op2.val, 'd');
+//					}
+//					else {
+//						op2 = slots[op2.val];
+//						if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
+//						slots[op1.val] = op2;
 //					}
 //				}
 //				else {
-//					slots[op1.val] = op2;
+//					if (op2.type == 'd') {
+//						slots[op1.val] = op2;
+//					}
+//					else if (op2.type == 'i') {
+//						slots[op1.val] = op2;
+//					}
+//					else {
+//						op2 = slots[op2.val];
+//						if (op2.val == "") { op2.val = "0"; op2.type = 'i'; };
+//						slots[op1.val] = op2;
+//					}
 //				}
 //				// IMPORTANT not op1, not op2
 //				// ×¢ÒâÓÒ½áºÏ
@@ -550,11 +582,85 @@
 //	// a = 3 * (1 + 1) + 6;
 //	// (1 * 2 + 3) + -4 * -5;
 //	// b = a = 2.5 where b is double a is int
-//
-//int a;
+//int a, b, c, d, e, f = 0, g = 0;
+//double da, db, x, y, z;
+//a = 1;
+//b = 2;
+//e = f + (g = a + b);
+//print(e);
+//print(f);
+//print(g);
+//a = -1 + 2;
+//print(a);
+//b = -(-1);
+//print(b);
+//a = (-1)+ (+ - 2);
+//print(a);
+//a = b = c = d = x = y = 0;
+//x = 5.0;
+//y = 0.01;
+//x = x / y;
+//print(x);
+//x = 5.0;
+//y = 2.0;
+//x = x / y;
+//print(a);
+//x = 5 / 2;
+//print(a);
+//y = 5;
+//x = y / 2.0;
+//print(x);
+//print(a);
+//a = 2;
+//y = 2.5;
+//y = a = 2.5;
+//print(y);
+//y = a = 3.1346 * (a + y + 3 * (5 + y) + 7 * 6) + -9 * -3 / 2;
+//print(y);
+//a = 9;
+//y = a = 1 + 1.5;
+//print(y);
+//print(2 + (1 + 2) * 5);
+//c = y = a = 2 + 2.5;
+//print(a);
+//print(y);
+//print(c);
+//c = b = a = 2 + 2.5;
+//print(a);
+//print(b);
+//print(c);
 //a = 9;
 //a = a * .55555555;
 //print(a);
+////print(dum1);
+////dum2 = dum2 + 1;
+////print(dum2)
+////dum3 = dum3 + dum2
+////print(dum3);
+////dum4 = dum4 * 1.0;
+////print(dum4)
+//cout << endl << endl << endl << endl;
+//a = 5;
+//b = c;
+//x = 5;
+//y = a;
+//print(b)
+//print(y)
+//a = 5.5;
+//x = y = (1 + a)*6.44;
+//a + 4;
+//a = a / 2;
+//print(a);
+//y = (c + 6)*-(1 + (+1));
+//print(y);
+//d = a / (2 / 5);
+//print(d);
+//b = 5.5;
+//a = b / 2.0;
+//print(a);
+//x = 5.0;
+//y = 0.0;
+//x = x / y;
 //}
 //
 //int main() {
@@ -562,6 +668,8 @@
 //	//ifstream fin("1.txt");	streambuf *cinbackup;  	cinbackup = cin.rdbuf(fin.rdbuf());
 //#endif
 //	//test();
+//	// freopen("1111.txt", "w", stdout);
+//	printf("-----------------------------------------\n");
 //	cin >> T;
 //	slots.clear();
 //	memset(prio, 0, sizeof prio);
