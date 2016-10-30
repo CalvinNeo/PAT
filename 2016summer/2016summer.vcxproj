@@ -154,6 +154,7 @@
     <ClCompile Include="ccpc2016.1007.cpp" />
     <ClCompile Include="ccpc2016.1011.cpp" />
     <ClCompile Include="ccpc2016.1002.cpp" />
+    <ClCompile Include="ccpc2016hangzhou.1001.ans.cpp" />
     <ClCompile Include="ccpc2016hangzhou.1001.cpp" />
     <ClCompile Include="ccpc2016hangzhou.1003.cpp" />
     <ClCompile Include="ccpc2016hangzhou.1011.cpp" />
@@ -248,6 +249,15 @@
     <ClCompile Include="multi6.1003.cpp" />
     <ClCompile Include="multi6.1010.cpp" />
     <ClCompile Include="multi9.1012.cpp" />
+    <ClCompile Include="njust2016.A.cpp" />
+    <ClCompile Include="njust2016.B.cpp" />
+    <ClCompile Include="njust2016.C.cpp" />
+    <ClCompile Include="njust2016.D.cpp" />
+    <ClCompile Include="njust2016.dummy.cpp" />
+    <ClCompile Include="njust2016.E.cpp" />
+    <ClCompile Include="njust2016.F.cpp" />
+    <ClCompile Include="njust2016.G.cpp" />
+    <ClCompile Include="njust2016.H.cpp" />
     <ClCompile Include="noj1119.cpp" />
     <ClCompile Include="pat1001.cpp" />
     <ClCompile Include="pat1002.cpp" />
