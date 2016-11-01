@@ -227,6 +227,7 @@
     <ClCompile Include="icpc4.1010.cpp" />
     <ClCompile Include="icpc4.1010.m.cpp" />
     <ClCompile Include="icpc4.1010.ans.cpp" />
+    <ClCompile Include="icpc4.1010.correct.cpp" />
     <ClCompile Include="leet.3.cpp" />
     <ClCompile Include="llb1.1001.cpp" />
     <ClCompile Include="multi10.1001.cpp" />

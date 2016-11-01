@@ -89,12 +89,15 @@
 //void dfs(int n, int x, int y) {
 //	//printf("%d %d mv = %d\n", Cha[n].STx, Cha[n].STy, Cha[n].MV);
 //	if (Cha[n].STx == x && Cha[n].STy == y) {
+//		// 如果抵达终点
 //		if (Cha[n].MV > maxn) {
+//			// 如果体力值够
 //			maxn = Cha[n].MV;
 //		}
 //		return;
 //	}
 //	if (Cha[n].MV < 0) {
+//		// 如果体力值已经不够了
 //		return;
 //	}
 //	int fuckx = Cha[n].STx;

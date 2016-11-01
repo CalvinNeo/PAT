@@ -32,6 +32,7 @@
 //int n, m, c, e, cur, xx, yy, mv, ans;
 //Character a[110];
 //char s[100];
+//// G，和占领者
 //int mp[110][110], f[110][110];
 //bool vis[110][110];
 //priority_queue<Node> q;
@@ -87,6 +88,7 @@
 //	if (d >= a[cur].ad1 && d <= a[cur].ad2 && a[ID].hp <= a[cur].at)
 //	{
 //		a[ID].hp -= a[cur].at;
+//		// 无人占领
 //		f[a[ID].x][a[ID].y] = -1;
 //		return a[ID].hp;
 //	}

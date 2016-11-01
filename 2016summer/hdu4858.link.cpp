@@ -23,7 +23,8 @@
 //#define ULL unsigned long long
 //#define LD long double
 //typedef pair<int, int> pii;
-//
+// // WILL CAUSE TLE
+// // HOWEVER USE VECTOR IS OK
 //struct Edge {
 //	int to;
 //	int next;
