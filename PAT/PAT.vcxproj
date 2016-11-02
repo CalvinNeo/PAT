@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>2016summer</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>2016summer</ProjectName>
+    <ProjectName>PAT</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,119 +147,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bnu1.1005.cpp" />
-    <ClCompile Include="cccc.1.28.cpp" />
-    <ClCompile Include="cccc.2.13.cpp" />
-    <ClCompile Include="ccpc2016.1004.cpp" />
-    <ClCompile Include="ccpc2016.1007.cpp" />
-    <ClCompile Include="ccpc2016.1011.cpp" />
-    <ClCompile Include="ccpc2016.1002.cpp" />
-    <ClCompile Include="ccpc2016hangzhou.1001.ans.cpp" />
-    <ClCompile Include="ccpc2016hangzhou.1001.cpp" />
-    <ClCompile Include="ccpc2016hangzhou.1003.cpp" />
-    <ClCompile Include="ccpc2016hangzhou.1011.cpp" />
-    <ClCompile Include="ccpc2016hefei.a.cpp" />
-    <ClCompile Include="ccpc2016hefei.i.cpp" />
-    <ClCompile Include="gq1.1002.cpp" />
-    <ClCompile Include="gq3.1006.cpp" />
-    <ClCompile Include="gq4.1004.cpp" />
-    <ClCompile Include="gq4.1010.cpp" />
-    <ClCompile Include="gq6.1004.cpp" />
-    <ClCompile Include="gq8.1002.cpp" />
-    <ClCompile Include="gq8.1005.cpp" />
-    <ClCompile Include="gq8.1009.cpp" />
-    <ClCompile Include="gq8.1011.cpp" />
-    <ClCompile Include="hdu1097.cpp" />
-    <ClCompile Include="hdu4858.cpp" />
-    <ClCompile Include="hdu4858.link.cpp" />
-    <ClCompile Include="hhu5.1001.cpp" />
-    <ClCompile Include="hhu1.1001.cpp" />
-    <ClCompile Include="hhu1.1002.cpp" />
-    <ClCompile Include="hhu1.1003.cpp" />
-    <ClCompile Include="hhu1.1004.cpp" />
-    <ClCompile Include="hhu1.1005.cpp" />
-    <ClCompile Include="hhu2.1001.cpp" />
-    <ClCompile Include="hhu2.1002.cpp" />
-    <ClCompile Include="hhu2.1003.cpp" />
-    <ClCompile Include="hhu2.1005.cpp" />
-    <ClCompile Include="hhu3.1001.cpp" />
-    <ClCompile Include="hhu3.1002.cpp" />
-    <ClCompile Include="hhu3.1003.cpp" />
-    <ClCompile Include="hhu3.1004.cpp" />
-    <ClCompile Include="hhu3.1005.cpp" />
-    <ClCompile Include="hhu4.1001.cpp" />
-    <ClCompile Include="hhu4.1002.cpp" />
-    <ClCompile Include="hhu4.1003.cpp" />
-    <ClCompile Include="hhu4.1005.cpp" />
-    <ClCompile Include="hhu5.1002.cpp" />
-    <ClCompile Include="hhu5.1003.cpp" />
-    <ClCompile Include="hhu5.1004.cpp" />
-    <ClCompile Include="hhu5.1005.cpp" />
-    <ClCompile Include="hhut1.1002.cpp" />
-    <ClCompile Include="hhut1.1003.cpp" />
-    <ClCompile Include="hhut1.1004.cpp" />
-    <ClCompile Include="hhut1.1001.cpp" />
-    <ClCompile Include="hhut1.1005.cpp" />
-    <ClCompile Include="icpc1.1006.cpp" />
-    <ClCompile Include="icpc1.1007.cpp" />
-    <ClCompile Include="icpc1.1009.cpp" />
-    <ClCompile Include="icpc1.1010.cpp" />
-    <ClCompile Include="icpc2.1001.cpp" />
-    <ClCompile Include="icpc2.1011.m.cpp" />
-    <ClCompile Include="icpc2.1002.cpp" />
-    <ClCompile Include="icpc2.1006.cpp" />
-    <ClCompile Include="icpc2.1007.cpp" />
-    <ClCompile Include="icpc2.1011.cpp" />
-    <ClCompile Include="icpc2.1011.ans.cpp" />
-    <ClCompile Include="icpc2.1011.correct.cpp" />
-    <ClCompile Include="icpc2015hangzhou.1001.cpp" />
-    <ClCompile Include="icpc2015hangzhou.1003.cpp" />
-    <ClCompile Include="icpc2015hangzhou.1009.cpp" />
-    <ClCompile Include="icpc2015hangzhou.1010.cpp" />
-    <ClCompile Include="icpc3.1002.cpp" />
-    <ClCompile Include="icpc3.1003.cpp" />
-    <ClCompile Include="icpc3.1007.cpp" />
-    <ClCompile Include="icpc3.1009.cpp" />
-    <ClCompile Include="icpc3.1010.cpp" />
-    <ClCompile Include="icpc3.1011.cpp" />
-    <ClCompile Include="icpc4.1001.cpp" />
-    <ClCompile Include="icpc4.1006.cpp" />
-    <ClCompile Include="icpc4.1010.cpp" />
-    <ClCompile Include="icpc4.1010.m.cpp" />
-    <ClCompile Include="icpc4.1010.ans.cpp" />
-    <ClCompile Include="icpc4.1010.correct.cpp" />
-    <ClCompile Include="leet.3.cpp" />
-    <ClCompile Include="llb1.1001.cpp" />
-    <ClCompile Include="multi10.1001.cpp" />
-    <ClCompile Include="multi10.1002.cpp" />
-    <ClCompile Include="multi2.1003.cpp" />
-    <ClCompile Include="multi2.1009.cpp" />
-    <ClCompile Include="multi2.1011.cpp" />
-    <ClCompile Include="multi2.1012.cpp" />
-    <ClCompile Include="multi2.1001.cpp" />
-    <ClCompile Include="multi3.1001.cpp" />
-    <ClCompile Include="multi3.1002.cpp" />
-    <ClCompile Include="multi3.1011.cpp" />
-    <ClCompile Include="multi3.1011.old.cpp" />
-    <ClCompile Include="multi4.1011.cpp" />
-    <ClCompile Include="multi4.1012.cpp" />
-    <ClCompile Include="multi5.1003.cpp" />
-    <ClCompile Include="multi5.1012.cpp" />
-    <ClCompile Include="multi5.1012.m.cpp" />
-    <ClCompile Include="multi6.1001.cpp" />
-    <ClCompile Include="multi6.1003.cpp" />
-    <ClCompile Include="multi6.1010.cpp" />
-    <ClCompile Include="multi9.1012.cpp" />
-    <ClCompile Include="njust2016.A.cpp" />
-    <ClCompile Include="njust2016.B.cpp" />
-    <ClCompile Include="njust2016.C.cpp" />
-    <ClCompile Include="njust2016.D.cpp" />
-    <ClCompile Include="njust2016.dummy.cpp" />
-    <ClCompile Include="njust2016.E.cpp" />
-    <ClCompile Include="njust2016.F.cpp" />
-    <ClCompile Include="njust2016.G.cpp" />
-    <ClCompile Include="njust2016.H.cpp" />
-    <ClCompile Include="noj1119.cpp" />
     <ClCompile Include="pat1001.cpp" />
     <ClCompile Include="pat1002.cpp" />
     <ClCompile Include="pat1003.cpp" />
@@ -269,17 +156,7 @@
     <ClCompile Include="pat1007.cpp" />
     <ClCompile Include="pat1008.cpp" />
     <ClCompile Include="pat1009.cpp" />
-    <ClCompile Include="test_pq.cpp" />
-    <ClCompile Include="test_vector.cpp" />
-    <ClCompile Include="time.cpp" />
     <ClCompile Include="top1001.cpp" />
-    <ClCompile Include="zna.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="fuch.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="icpc4.1003.py" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
